@@ -1,5 +1,6 @@
 const router = require("express").Router();
-const tokenHandler = require("../handlers/tokenHandler");
+const { userController } = require("../controllers");
 
+router.post("/", userController.createUser);
 
 module.exports = router;

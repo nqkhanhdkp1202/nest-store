@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
+const Schema = mongoose.Schema
 
-const orderSchema = new mongoose.Schema({
+const orderSchema = new Schema({
   userId: {
-    type: mongoose.Schema.ObjectId,
+    type: Schema.Types.ObjectId,
     require: true,
     ref: "User",
   },
